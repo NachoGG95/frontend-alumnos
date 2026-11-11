@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f4f5f9;
+  color: #1f2333;
+}
+
+.contenedor { max-width: 900px; margin: 40px auto; padding: 0 16px; }
+
+.formulario {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  background: #fff;
+  padding: 18px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.formulario h2, .formulario .error { grid-column: 1 / -1; margin: 0; }
+
+input { padding: 9px 10px; border: 1px solid #cfd3e0; border-radius: 6px; }
+
+button {
+  padding: 9px 14px; border: none; border-radius: 6px;
+  background: #e0234e; color: #fff; font-weight: 600; cursor: pointer;
+}
+button.secundario { background: #e4e6ef; color: #1f2333; }
+
+.tabla { width: 100%; border-collapse: collapse; background: #fff; }
+.tabla th, .tabla td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #eceef4; }
+.acciones { display: flex; gap: 6px; justify-content: flex-end; }
+
+.error { color: #c0392b; background: #fdecea; padding: 10px 12px; border-radius: 6px; }
